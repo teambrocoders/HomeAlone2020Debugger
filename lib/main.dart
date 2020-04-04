@@ -118,7 +118,10 @@ class _MyHomePageState extends State<MyHomePage> {
     // try to match and you'll see :D
     // hint: before login, we must register.
     try {
-      Response response = await Dio().post("some_url",data: {});
+      Response response = await Dio().post("https://debugger.homealone2020.live/decrypt",data: {
+      "value":"",
+      "code":""
+    });
     } catch (e) {
       print(e);
     }
@@ -132,8 +135,9 @@ class _MyHomePageState extends State<MyHomePage> {
     this.might = "help to decrypt";
     //(Minimum 2 and maximum 6 requests per 5 minutes are allowed. Depending on the traffic)
     Dio().post("https://debugger.homealone2020.live/decrypt",data: {
-      "value":"",
-      "code":""
+      "value":"U2FsdGVkX19x0A+YNgfKIZQkNbgeigOyN8bdXgkCK+M5JPf7TCAdC+YBPheFBcPtVgGXCkXV/GeziqNYDsJPpHgxKqli6rbxDEYe+GH4vkVZUkP+991qSsusSvUovEZWoPBwukpUiDhFfNT6wAzBsYPwjT5oFBs41Gfdiq48CeBZZK+20qOltQOKnJxXb7TkMc6MykUPUrStzTEXDO0I7fmAxzkpiX4aHrHUlvPgHjVaXrOXXo34ccp5lT/Q4MCa
+",
+      "code":"12092017"
     });
     /*
     But what is the "code"??? hmm.... You have to find that!
