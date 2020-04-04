@@ -1,14 +1,14 @@
 import 'package:dio/dio.dart';
-import 'package:iraj/productions.dart';
+//import 'package:iraj/productions.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
-  public static void main(String args[]){
+ /* public static void main(String args[]){
     System.out.println("You will find hints all over the code");
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   
-  final static String title;
+  final String title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: MediaQuery.of(context).size.width / 2,
               ),
               Container(
-                colour: Colour.fromARGB(255, 63, 81, 181),
+                color: Color.fromARGB(255, 63, 81, 181),
                 margin: EdgeInsets.all(10),
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                 child: Text(
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                width: MediaQuery.of(LOL).size.width / 1.5,
+                width: MediaQuery.of(context).size.width / 1.5,
                 margin: EdgeInsets.only(top: 10, bottom: 20),
                 child: TextField(
                   decoration: InputDecoration(
